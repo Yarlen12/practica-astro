@@ -5,14 +5,16 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <header id="navbar" class="bg-green-950 fixed w-full top-0 left-0 z-50">
-    <nav class="container flex items-center justify-between h-16 sm:h-20">
+    <nav class="p-3 flex items-center justify-between h-16 sm:h-20">
       <!-- poner sm en text -->
       <div class="font-mono text-2xl ml-5">IndorePlants.</div>
 
       <div
         id="nav-menu"
-        class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden">
-        <ul class="flex flex-col items-center gap-8">
+        class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300
+        overflow-hidden md:static md:min-h-fit md:bg-transparent md:w-auto">
+        <!-- es lg en media con una medida de 768px -->
+        <ul class="flex flex-col items-center gap-8 md:flex-row">
           <li>
             <a href="#home" class="nav-link">Home</a>
           </li>
@@ -30,7 +32,7 @@ import Layout from "../layouts/Layout.astro";
           </li>
         </ul>
 
-        <div class="absolute bottom-0 -right-10 opacity-90">
+        <div class="absolute bottom-0 -right-10 opacity-90 md:hidden">
           <img
             src="/src/assets/img/leaf-1.png"
             alt="hoja de color verde de una planta"
@@ -38,7 +40,7 @@ import Layout from "../layouts/Layout.astro";
           />
         </div>
 
-        <div class="absolute -top-5 -left-5 rotate-90 opacity-90">
+        <div class="absolute -top-5 -left-5 rotate-90 opacity-90 md:hidden">
           <img
             src="/src/assets/img/leaf-2.png"
             alt="hoja de color verde de una planta"
@@ -47,10 +49,122 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
 
-      <div class="mr-6 text-2xl sm:text-3xl cursor-pointer z-50">
+      <div class="mr-6 text-2xl sm:text-3xl cursor-pointer z-50 md:hidden">
         <i class="ri-menu-4-line" id="hamburger"></i>
       </div>
     </nav>
   </header>
-  <script src="/src/assets/js/main.js"></script>
+
+  <main>
+    <section id="home" class="relative">
+      <div class="container">
+        <!-- blob 1 -->
+        <div
+          class="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        </div>
+
+        <div
+          class="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-0">
+        </div>
+
+        <div class="flex flex-col items-center gap-5 ml-6 md:flex-row">
+          <!-- Content -->
+          <div class="w-full space-y-5 md:w-1/2">
+            <h1>
+              <span class="text-yellow-500">Plants</span> make a
+              <br />
+              positive
+              <span class="text-yellow-500">impact</span> on <br />your
+              environment
+            </h1>
+
+            <p class="text-slate-300 font-serif">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laboriosam atque dicta nostrum! Eveniet soluta laudantium totam
+              delectus, similique veniam vel natus? Maxime ea numquam
+            </p>
+
+            <div
+              class="flex flex-col gap-2 sm:flex-row sm:gap-4 md:pt-5 xl:pt-10">
+              <button class="btn cursor-pointer">
+                <span>Shop Now</span>
+                <i class="ri-leaf-line"></i>
+              </button>
+
+              <button class="btn btn_outline cursor-pointer">
+                <span>Know More</span>
+                <i class="ri-leaf-line"></i>
+              </button>
+            </div>
+
+            <p class="text-xs font-serif text-slate-300">
+              You will get 30-days free trial.
+            </p>
+
+            <div class="flex items-center gap-5 text-lg md:pt-10">
+              <i
+                class="ri-facebook-fill text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"
+              ></i>
+              <i
+                class="ri-twitter-x-line text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"
+              ></i>
+              <i
+                class="ri-instagram-line text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"
+              ></i>
+              <i
+                class="ri-linkedin-fill text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- image -->
+          <div class="w-full relative md:w-1/2">
+            <img src="/src/assets/img/home.png" alt="home-image" />
+
+            <!-- leaf -->
+            <div
+              class="absolute -top-10 right-0 opacity-30 lg:top-5 animate-bounce">
+              <i class="ri-leaf-line text-6xl text-yellow-500"></i>
+            </div>
+
+            <!-- flower -->
+            <div
+              class="absolute bottom-0 left-0 opacity-30 lg:bottom-12 animate-spin">
+              <i class="ri-flower-line text-6xl text-yellow-500"></i>
+            </div>
+
+            <!-- plant -->
+            <div
+              class="hidden absolute -top-10 -left-5 opacity-30 md:block animate-pulse">
+              <i class="ri-plant-line text-6xl text-yellow-500"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <div class="bg-white text-green-900 py-20">
+      <div class="p-3 w-full">
+        <!-- card 1 -->
+        <div
+          class="border border-green-900 p-5 cursor-pointer w-[400px] items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300">
+          <div class="flex items-center gap-5 text-3xl sm:text-4xl lg:text-5xl">
+            <i class="ri-truck-line"></i>
+            <p class="sm: text-lg font-extrabold font-serif">
+              Fast <br />
+              Delivery
+            </p>
+          </div>
+
+          <p class="font-serif">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, eos.
+            Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/src/assets/js/main.js"></script>
+  </main>
 </Layout>
