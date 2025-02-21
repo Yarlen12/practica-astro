@@ -70,7 +70,7 @@ import Layout from "../layouts/Layout.astro";
         <div class="flex flex-col items-center gap-5 ml-6 md:flex-row">
           <!-- Content -->
           <div class="w-full space-y-5 md:w-1/2">
-            <h1>
+            <h1 class="">
               <span class="text-yellow-500">Plants</span> make a
               <br />
               positive
@@ -145,13 +145,14 @@ import Layout from "../layouts/Layout.astro";
 
     <!-- Services -->
     <div class="bg-white text-green-900 py-20">
-      <div class="p-3 w-full">
+      <div
+        class="p-3 w-full overflow-hidden grid grid-col-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
         <!-- card 1 -->
         <div
-          class="border border-green-900 p-5 cursor-pointer w-[400px] items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300">
-          <div class="flex items-center gap-5 text-3xl sm:text-4xl lg:text-5xl">
-            <i class="ri-truck-line"></i>
-            <p class="sm: text-lg font-extrabold font-serif">
+          class="border border-green-900 p-5 cursor-pointer items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5 w-auto">
+          <div class="flex items-center gap-5">
+            <i class="ri-truck-line text-3xl sm:text-4xl lg:text-5xl"></i>
+            <p class="sm:text-lg font-bold font-sans">
               Fast <br />
               Delivery
             </p>
@@ -162,8 +163,179 @@ import Layout from "../layouts/Layout.astro";
             Lorem ipsum dolor sit amet.
           </p>
         </div>
+
+        <!-- card 2 -->
+        <div
+          class="border border-green-900 p-5 cursor-pointer w-auto items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
+          <div class="flex items-center gap-5">
+            <i class="ri-customer-service-line text-3xl sm:text-4xl lg:text-5xl"
+            ></i>
+            <p class="sm:text-lg font-bold font-sans">
+              Great Customer <br />
+              Service
+            </p>
+          </div>
+
+          <p class="font-serif">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, eos.
+            Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+
+        <!-- card 3 -->
+        <div
+          class="border border-green-900 p-5 cursor-pointer w-auto items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
+          <div class="flex items-center gap-5">
+            <i class="ri-plant-line text-3xl sm:text-4xl lg:text-5xl"></i>
+            <p class="sm:text-lg font-bold font-sans">
+              Original <br />
+              Plant
+            </p>
+          </div>
+
+          <p class="font-serif">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, eos.
+            Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+
+        <!-- card 4 -->
+        <div
+          class="border border-green-900 p-5 cursor-pointer w-auto items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
+          <div class="flex items-center gap-5">
+            <i
+              class="ri-money-dollar-circle-line text-3xl sm:text-4xl lg:text-5xl"
+            ></i>
+            <p class="sm:text-lg font-bold font-sans">
+              Affordable <br />
+              Price
+            </p>
+          </div>
+
+          <p class="font-serif">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, eos.
+            Lorem ipsum dolor sit amet.
+          </p>
+        </div>
       </div>
     </div>
+
+    <!-- About Us -->
+    <section id="about" class="relative overflow-hidden">
+      <div class="absolute -top-8 -right-12 opacity-50">
+        <img
+          src="/src/assets/img/leaf-3.png"
+          alt="leaf_image"
+          class="w-40 md:w-52 xl:w-64"
+        />
+      </div>
+
+      <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+        <h2 class="title">About Us</h2>
+        <p class="max-w-2xl font-sans text-xl">Follow instruction for more</p>
+      </div>
+
+      <div class="container p-13 space-y-10 xl:space-y-0">
+        <!-- item 1 -->
+        <div class="flex flex-col items-center md:flex-row gap-5">
+          <!-- image -->
+          <div class="w-full md:w-1/2">
+            <img
+              src="/src/assets/img/plant-1.png"
+              alt="about_image"
+              class="w-full sm:w-2/3 md:w-full lg:w-2/3 xl:w-2/3 mx-auto"
+            />
+          </div>
+
+          <!-- content -->
+          <div class="w-full md:w-1/2">
+            <div class="space-y-5">
+              <h3>
+                Make your <span class="text-yellow-500">organic</span>
+                <br /> garden
+              </h3>
+              <p class="text-slate-300 font-sans text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                aspernatur temporibus ipsa, suscipit fugiat assumenda
+                repudiandae debitis natus est ipsum tempora esse harum vitae
+                adipisci. Facere voluptas reiciendis iusto nihil! Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Soluta, eos.
+                Lorem, ipsum dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 2 -->
+        <div class="flex flex-col items-center md:flex-row-reverse gap-5">
+          <!-- image -->
+          <div class="w-full md:w-1/2">
+            <img
+              src="/src/assets/img/plant-2.png"
+              alt="about_image"
+              class="w-full sm:w-2/3 md:w-full lg:w-2/3 xl:w-2/3 mx-auto"
+            />
+          </div>
+
+          <!-- content -->
+          <div class="w-full md:w-1/2">
+            <div class="space-y-5">
+              <h3>
+                Come with us <br />
+                <span class="text-yellow-500">grow up</span> your plant.
+              </h3>
+              <p class="text-slate-300 font-sans text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                aspernatur temporibus ipsa, suscipit fugiat assumenda
+                repudiandae debitis natus est ipsum tempora esse harum vitae
+                adipisci. Facere voluptas reiciendis iusto nihil! Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Soluta, eos.
+                Lorem, ipsum dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular -->
+
+    <section id="popular" class="bg-green-900">
+      <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-28">
+        <h2 class="title">Your Choice Plant</h2>
+        <p class="max-w-2xl font-sans text-xl">Follow instruction for more</p>
+      </div>
+
+      <div class="p-15 w-full">
+        <!-- card 1 -->
+        <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+          <img
+            src="/src/assets/img/cart-1.png"
+            alt="popular_img"
+            class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500"
+          />
+
+          <p class="italic">Nephrolepis exaltata</p>
+          <h3>Boston Fern</h3>
+
+          <div class="text-yellow-500 text-xs py-3">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-half-fill"></i>
+            <i class="ri-star-line text-gray-400"></i>
+            <i class="ri-star-line text-gray-400"></i>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <p class="text-xl">$5</p>
+
+            <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+              <i class="ri-shopping-cart-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="/src/assets/js/main.js"></script>
   </main>
