@@ -7,7 +7,7 @@ import Layout from "../layouts/Layout.astro";
   <header id="navbar" class="bg-green-950 fixed w-full top-0 left-0 z-50">
     <nav class="p-3 flex items-center justify-between h-16 sm:h-20">
       <!-- poner sm en text -->
-      <div class="font-mono text-2xl ml-5">IndorePlants.</div>
+      <div class="font-Lobster sm:text-2xl ml-5">IndorePlants.</div>
 
       <div
         id="nav-menu"
@@ -68,9 +68,9 @@ import Layout from "../layouts/Layout.astro";
           class="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-0">
         </div>
 
-        <div class="flex flex-col items-center gap-5 ml-6 md:flex-row">
+        <div class="flex flex-col items-center gap-5 ml-6 lg:flex-row">
           <!-- Content -->
-          <div class="w-full space-y-5 md:w-1/2">
+          <div class="w-full space-y-5 lg:w-1/2">
             <h1 class="">
               <span class="text-yellow-500">Plants</span> make a
               <br />
@@ -79,14 +79,14 @@ import Layout from "../layouts/Layout.astro";
               environment
             </h1>
 
-            <p class="text-slate-300 font-serif">
+            <p class="text-slate-300 font-sans">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Laboriosam atque dicta nostrum! Eveniet soluta laudantium totam
               delectus, similique veniam vel natus? Maxime ea numquam
             </p>
 
             <div
-              class="flex flex-col gap-2 sm:flex-row sm:gap-4 md:pt-5 xl:pt-10">
+              class="flex flex-col gap-2 md:flex-row md:gap-4 lg:pt-5 xl:pt-10">
               <button class="btn cursor-pointer">
                 <span>Shop Now</span>
                 <i class="ri-leaf-line"></i>
@@ -98,11 +98,11 @@ import Layout from "../layouts/Layout.astro";
               </button>
             </div>
 
-            <p class="text-xs font-serif text-slate-300">
+            <p class="text-xs font-sans text-slate-300">
               You will get 30-days free trial.
             </p>
 
-            <div class="flex items-center gap-5 text-lg md:pt-10">
+            <div class="flex items-center gap-5 text-lg lg:pt-10">
               <i
                 class="ri-facebook-fill text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"
               ></i>
@@ -119,24 +119,24 @@ import Layout from "../layouts/Layout.astro";
           </div>
 
           <!-- image -->
-          <div class="w-full relative md:w-1/2">
+          <div class="w-full relative lg:w-1/2">
             <img src="/src/assets/img/home.png" alt="home-image" />
 
             <!-- leaf -->
             <div
-              class="absolute -top-10 right-0 opacity-30 lg:top-5 animate-bounce">
+              class="absolute -top-10 right-0 opacity-30 lg:top-5 animate-moving-y">
               <i class="ri-leaf-line text-6xl text-yellow-500"></i>
             </div>
 
             <!-- flower -->
             <div
-              class="absolute bottom-0 left-0 opacity-30 lg:bottom-12 animate-spin">
+              class="absolute bottom-0 left-0 opacity-30 lg:bottom-12 animate-rotating">
               <i class="ri-flower-line text-6xl text-yellow-500"></i>
             </div>
 
             <!-- plant -->
             <div
-              class="hidden absolute -top-10 -left-5 opacity-30 md:block animate-pulse">
+              class="hidden absolute -top-10 -left-5 opacity-30 md:block animate-scaling-up">
               <i class="ri-plant-line text-6xl text-yellow-500"></i>
             </div>
           </div>
@@ -145,9 +145,9 @@ import Layout from "../layouts/Layout.astro";
     </section>
 
     <!-- Services -->
-    <div class="bg-white text-green-900 py-20">
+    <div class="bg-white text-green-900 py-20 container">
       <div
-        class="p-3 w-full overflow-hidden grid grid-col-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
+        class="p-3 w-full overflow-hidden grid grid-col-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <!-- card 1 -->
         <div
           class="border border-green-900 p-5 cursor-pointer items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5 w-auto">
@@ -166,8 +166,9 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- card 2 -->
+        <!-- PENDIENTE -->
         <div
-          class="border border-green-900 p-5 cursor-pointer w-auto items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
+          class="border border-green-900 p-5 cursor-pointer items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5 w-auto">
           <div class="flex items-center gap-5">
             <i class="ri-customer-service-line text-3xl sm:text-4xl lg:text-5xl"
             ></i>
@@ -231,16 +232,16 @@ import Layout from "../layouts/Layout.astro";
         />
       </div>
 
-      <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+      <div class="flex flex-col items-center gap-3 text-center mb-10 lg:mb-20">
         <h2 class="title">About Us</h2>
         <p class="max-w-2xl font-sans text-xl">Follow instruction for more</p>
       </div>
 
-      <div class="container p-13 space-y-10 xl:space-y-0">
+      <div class="container space-y-10 xl:space-y-0">
         <!-- item 1 -->
-        <div class="flex flex-col items-center md:flex-row gap-5">
+        <div class="flex flex-col items-center lg:flex-row gap-5">
           <!-- image -->
-          <div class="w-full md:w-1/2">
+          <div class="w-full lg:w-1/2">
             <img
               src="/src/assets/img/plant-1.png"
               alt="about_image"
@@ -249,7 +250,7 @@ import Layout from "../layouts/Layout.astro";
           </div>
 
           <!-- content -->
-          <div class="w-full md:w-1/2">
+          <div class="w-full lg:w-1/2">
             <div class="space-y-5">
               <h3>
                 Make your <span class="text-yellow-500">organic</span>
@@ -268,7 +269,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- item 2 -->
-        <div class="flex flex-col items-center md:flex-row-reverse gap-5">
+        <div class="flex flex-col items-center lg:flex-row-reverse gap-5">
           <!-- image -->
           <div class="w-full md:w-1/2">
             <img
@@ -279,7 +280,7 @@ import Layout from "../layouts/Layout.astro";
           </div>
 
           <!-- content -->
-          <div class="w-full md:w-1/2">
+          <div class="w-full lg:w-1/2">
             <div class="space-y-5">
               <h3>
                 Come with us <br />
@@ -302,7 +303,7 @@ import Layout from "../layouts/Layout.astro";
     <!-- Popular -->
 
     <section id="popular" class="bg-green-900">
-      <div class="flex flex-col items-center gap-3 text-center mb-10">
+      <div class="container flex flex-col items-center gap-3 text-center mb-15">
         <h2 class="title">Your Choice Plant</h2>
         <p class="max-w-2xl font-sans text-xl">Follow instruction for more</p>
       </div>
@@ -425,12 +426,12 @@ import Layout from "../layouts/Layout.astro";
 
     <!-- Review -->
     <section id="review">
-      <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+      <div class="flex flex-col items-center gap-3 text-center mb-10 lg:mb-20">
         <h2 class="title">Customer Review</h2>
         <p class="max-w-2xl font-sans text-xl">Follow instruction for more</p>
       </div>
 
-      <div>
+      <div class="container">
         <div>
           <ul>
             <li>
@@ -443,6 +444,12 @@ import Layout from "../layouts/Layout.astro";
                 </p>
                 <div>
                   <img src="/src/assets/img/review-1.jpg" alt="review-image" />
+                  <div>
+                    <p>John Doe</p>
+                    <p>Designer</p>
+                  </div>
+
+                  <i class="ri-double-quotes-r"></i>
                 </div>
               </div>
             </li>
