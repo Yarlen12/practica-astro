@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@config "../../tailwind.config.js";
 
 body {
   @apply bg-green-950 text-white font-serif tracking-wider;
@@ -12,7 +13,7 @@ h1 {
 }
 
 h2 {
-  @apply text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold;
+  @apply text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold;
 }
 
 h3 {
