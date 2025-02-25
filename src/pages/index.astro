@@ -1,6 +1,7 @@
 ---
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
+import Swiper from "swiper/bundle";
 ---
 
 <Layout>
@@ -432,24 +433,28 @@ import Layout from "../layouts/Layout.astro";
       </div>
 
       <div class="container">
-        <div>
-          <ul>
-            <li>
-              <div>
-                <p>
+        <div class="swiper py-12">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                <p class="font-Lobster">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Aliquid atque praesentium, blanditiis sit rem non
                   voluptatibus? Ipsum, est officiis nesciunt magnam earum modi
                   sunt, omnis corrupti impedit odit facilis.
                 </p>
                 <div>
-                  <img src="/src/assets/img/review-1.jpg" alt="review-image" />
-                  <div>
-                    <p>John Doe</p>
+                  <img
+                    src="/src/assets/img/review-1.jpg"
+                    alt="review-image"
+                    class="w-12 h-12 rounded-full"
+                  />
+                  <div class="ml-12">
+                    <p class="text-yellow-500 uppercase">John Doe</p>
                     <p>Designer</p>
                   </div>
 
-                  <i class="ri-double-quotes-r"></i>
+                  <i class="ri-double-quotes-r text-4xl ml-auto"></i>
                 </div>
               </div>
             </li>
@@ -457,6 +462,9 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
 
     <script src="/src/assets/js/main.js"></script>
   </main>
