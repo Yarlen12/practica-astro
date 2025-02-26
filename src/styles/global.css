@@ -55,3 +55,8 @@ h3 {
 .popular_card:hover img {
   @apply -top-8;
 }
+.swiper-slide {
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+}
