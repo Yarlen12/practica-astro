@@ -1,7 +1,6 @@
 ---
-import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
-import Swiper from "swiper/bundle";
+import Gallery from "../components/Gallery.astro";
 ---
 
 <Layout>
@@ -167,7 +166,7 @@ import Swiper from "swiper/bundle";
         </div>
 
         <!-- card 2 -->
-        <!-- PENDIENTE -->
+        <!-- PENDIENTE UNA CARTA MAS GRANDE -->
         <div
           class="border border-green-900 p-5 cursor-pointer items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5 w-auto">
           <div class="flex items-center gap-5">
@@ -440,10 +439,55 @@ import Swiper from "swiper/bundle";
                 <p class="font-Lobster">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Aliquid atque praesentium, blanditiis sit rem non
-                  voluptatibus? Ipsum, est officiis nesciunt magnam earum modi
-                  sunt, omnis corrupti impedit odit facilis.
+                  voluptatibus.
                 </p>
-                <div>
+                <div class="flex items-center">
+                  <img
+                    src="/src/assets/img/review-1.jpg"
+                    alt="review-image"
+                    class="w-12 h-12 rounded-full"
+                  />
+                  <div class="ml-12">
+                    <p class="text-yellow-500 uppercase">John Doe</p>
+                    <p>Designer</p>
+                  </div>
+
+                  <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                <p class="font-Lobster">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid atque praesentium, blanditiis sit rem non
+                  voluptatibus.
+                </p>
+                <dive class="flex items-center">
+                  <img
+                    src="/src/assets/img/review-1.jpg"
+                    alt="review-image"
+                    class="w-12 h-12 rounded-full"
+                  />
+                  <div class="ml-12">
+                    <p class="text-yellow-500 uppercase">John Doe</p>
+                    <p>Designer</p>
+                  </div>
+
+                  <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                </dive>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                <p class="font-Lobster">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid atque praesentium, blanditiis sit rem non
+                  voluptatibus.
+                </p>
+                <div class="flex items-center">
                   <img
                     src="/src/assets/img/review-1.jpg"
                     alt="review-image"
@@ -462,10 +506,16 @@ import Swiper from "swiper/bundle";
         </div>
       </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-    ></script>
-
-    <script src="/src/assets/js/main.js"></script>
   </main>
+
+  <script>
+    import Swiper from "swiper/bundle";
+    import "swiper/css/bundle";
+    export const swipperConfig = {
+      loop: true,
+    };
+    const swiper = new Swiper(".swiper", swipperConfig);
+  </script>
+
+  <script src="/src/assets/js/main.js"></script>
 </Layout>
