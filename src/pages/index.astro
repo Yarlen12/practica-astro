@@ -425,7 +425,14 @@ import Gallery from "../components/Gallery.astro";
     </section>
 
     <!-- Review -->
-    <section id="review">
+    <section id="review" class="relative mb-20 md:mb-28 overflow-hidden">
+      <div class="absolute -top-8 -left-12 opacity-50">
+        <img
+          src="/src/assets/img/leaf-4.png"
+          alt="leaf_image"
+          class="w-50 md:w-52 xl:w-64"
+        />
+      </div>
       <div class="flex flex-col items-center gap-3 text-center mb-10 lg:mb-20">
         <h2 class="title">Customer Review</h2>
         <p class="max-w-2xl font-sans text-xl">Follow instruction for more</p>
@@ -445,9 +452,9 @@ import Gallery from "../components/Gallery.astro";
                   <img
                     src="/src/assets/img/review-1.jpg"
                     alt="review-image"
-                    class="w-12 h-12 rounded-full"
+                    class="w-12 h-12 rounded-full object-fill bg-cover"
                   />
-                  <div class="ml-12">
+                  <div class="ml-3">
                     <p class="text-yellow-500 uppercase">John Doe</p>
                     <p>Designer</p>
                   </div>
@@ -466,11 +473,11 @@ import Gallery from "../components/Gallery.astro";
                 </p>
                 <dive class="flex items-center">
                   <img
-                    src="/src/assets/img/review-1.jpg"
+                    src="/src/assets/img/review-2.jpg"
                     alt="review-image"
-                    class="w-12 h-12 rounded-full"
+                    class="w-12 h-12 rounded-full object-fill bg-cover"
                   />
-                  <div class="ml-12">
+                  <div class="ml-3">
                     <p class="text-yellow-500 uppercase">John Doe</p>
                     <p>Designer</p>
                   </div>
@@ -489,11 +496,57 @@ import Gallery from "../components/Gallery.astro";
                 </p>
                 <div class="flex items-center">
                   <img
+                    src="/src/assets/img/review-3.jpg"
+                    alt="review-image"
+                    class="w-12 h-12 rounded-full object-fill bg-cover"
+                  />
+                  <div class="ml-3">
+                    <p class="text-yellow-500 uppercase">John Doe</p>
+                    <p>Designer</p>
+                  </div>
+
+                  <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                <p class="font-Lobster">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid atque praesentium, blanditiis sit rem non
+                  voluptatibus.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="/src/assets/img/review-4.jpg"
+                    alt="review-image"
+                    class="w-12 h-12 rounded-full object-fill bg-cover"
+                  />
+                  <div class="ml-3">
+                    <p class="text-yellow-500 uppercase">John Doe</p>
+                    <p>Designer</p>
+                  </div>
+
+                  <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                <p class="font-Lobster">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid atque praesentium, blanditiis sit rem non
+                  voluptatibus.
+                </p>
+                <div class="flex items-center">
+                  <img
                     src="/src/assets/img/review-1.jpg"
                     alt="review-image"
-                    class="w-12 h-12 rounded-full"
+                    class="w-12 h-12 rounded-full object-fill bg-cover"
                   />
-                  <div class="ml-12">
+                  <div class="ml-3">
                     <p class="text-yellow-500 uppercase">John Doe</p>
                     <p>Designer</p>
                   </div>
@@ -503,19 +556,33 @@ import Gallery from "../components/Gallery.astro";
               </div>
             </li>
           </ul>
+
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
   </main>
 
-  <script>
-    import Swiper from "swiper/bundle";
-    import "swiper/css/bundle";
-    export const swipperConfig = {
-      loop: true,
-    };
-    const swiper = new Swiper(".swiper", swipperConfig);
-  </script>
+  <!-- Footer -->
+
+  <footer>
+    <!-- newsletter -->
+    <div>
+      <div>
+        <h3>
+          <span class="text-yellow-500">Subscribe</span> to aour newsletter Subscribe
+        </h3>
+
+        <div>
+          <input type="email" placeholder="Your Email Address" />
+          <button>
+            <span>Subscribe</span>
+            <i class="ri-send-plane-2-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="/src/assets/js/main.js"></script>
 </Layout>
