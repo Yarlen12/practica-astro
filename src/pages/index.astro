@@ -70,7 +70,7 @@ import Gallery from "../components/Gallery.astro";
 
         <div class="flex flex-col items-center gap-5 ml-6 lg:flex-row">
           <!-- Content -->
-          <div class="w-full space-y-5 lg:w-1/2">
+          <div class="home_data w-full space-y-5 lg:w-1/2">
             <h1 class="">
               <span class="text-yellow-500">Plants</span> make a
               <br />
@@ -120,7 +120,11 @@ import Gallery from "../components/Gallery.astro";
 
           <!-- image -->
           <div class="w-full relative lg:w-1/2">
-            <img src="/src/assets/img/home.png" alt="home-image" />
+            <img
+              src="/src/assets/img/home.png"
+              alt="home-image"
+              class="home_image"
+            />
 
             <!-- leaf -->
             <div
@@ -150,7 +154,7 @@ import Gallery from "../components/Gallery.astro";
         class="container p-3 w-full overflow-hidden grid grid-col-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <!-- card 1 -->
         <div
-          class="border border-green-900 p-5 cursor-pointer items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5 w-auto">
+          class="service_card border border-green-900 p-5 cursor-pointer items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5 w-auto">
           <div class="flex items-center gap-5">
             <i class="ri-truck-line text-3xl sm:text-4xl lg:text-5xl"></i>
             <p class="sm:text-lg font-bold font-sans">
@@ -168,7 +172,7 @@ import Gallery from "../components/Gallery.astro";
         <!-- card 2 -->
         <!-- PENDIENTE UNA CARTA MAS GRANDE -->
         <div
-          class="border border-green-900 p-5 cursor-pointer items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5 w-auto">
+          class="service_card border border-green-900 p-5 cursor-pointer items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5 w-auto">
           <div class="flex items-center gap-5">
             <i class="ri-customer-service-line text-3xl sm:text-4xl lg:text-5xl"
             ></i>
@@ -186,7 +190,7 @@ import Gallery from "../components/Gallery.astro";
 
         <!-- card 3 -->
         <div
-          class="border border-green-900 p-5 cursor-pointer w-auto items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
+          class="service_card border border-green-900 p-5 cursor-pointer w-auto items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
           <div class="flex items-center gap-5">
             <i class="ri-plant-line text-3xl sm:text-4xl lg:text-5xl"></i>
             <p class="sm:text-lg font-bold font-sans">
@@ -203,7 +207,7 @@ import Gallery from "../components/Gallery.astro";
 
         <!-- card 4 -->
         <div
-          class="border border-green-900 p-5 cursor-pointer w-auto items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
+          class="service_card border border-green-900 p-5 cursor-pointer w-auto items-center justify-center place-self-center rounded-md hover:shadow-2xl hover:translate-y-1 duration-300 space-y-5">
           <div class="flex items-center gap-5">
             <i
               class="ri-money-dollar-circle-line text-3xl sm:text-4xl lg:text-5xl"
@@ -224,7 +228,7 @@ import Gallery from "../components/Gallery.astro";
 
     <!-- About Us -->
     <section id="about" class="relative overflow-hidden">
-      <div class="absolute -top-8 -right-12 opacity-50">
+      <div class="about_leaf absolute -top-8 -right-12 opacity-50">
         <img
           src="/src/assets/img/leaf-3.png"
           alt="leaf_image"
@@ -232,7 +236,8 @@ import Gallery from "../components/Gallery.astro";
         />
       </div>
 
-      <div class="flex flex-col items-center gap-3 text-center mb-10 lg:mb-20">
+      <div
+        class="about_top flex flex-col items-center gap-3 text-center mb-10 lg:mb-20">
         <h2 class="title">About Us</h2>
         <p class="max-w-2xl font-sans text-xl">Follow instruction for more</p>
       </div>
@@ -241,7 +246,7 @@ import Gallery from "../components/Gallery.astro";
         <!-- item 1 -->
         <div class="flex flex-col items-center lg:flex-row gap-5">
           <!-- image -->
-          <div class="w-full lg:w-1/2">
+          <div class="about_item_1-img w-full lg:w-1/2">
             <img
               src="/src/assets/img/plant-1.png"
               alt="about_image"
@@ -250,7 +255,7 @@ import Gallery from "../components/Gallery.astro";
           </div>
 
           <!-- content -->
-          <div class="w-full lg:w-1/2">
+          <div class="about_item_1-content w-full lg:w-1/2">
             <div class="space-y-5">
               <h3>
                 Make your <span class="text-yellow-500">organic</span>
@@ -271,7 +276,7 @@ import Gallery from "../components/Gallery.astro";
         <!-- item 2 -->
         <div class="flex flex-col items-center lg:flex-row-reverse gap-5">
           <!-- image -->
-          <div class="w-full md:w-1/2">
+          <div class="about_item_2-img w-full md:w-1/2">
             <img
               src="/src/assets/img/plant-2.png"
               alt="about_image"
@@ -280,7 +285,7 @@ import Gallery from "../components/Gallery.astro";
           </div>
 
           <!-- content -->
-          <div class="w-full lg:w-1/2">
+          <div class="about_item_2-content w-full lg:w-1/2">
             <div class="space-y-5">
               <h3>
                 Come with us <br />
@@ -303,7 +308,8 @@ import Gallery from "../components/Gallery.astro";
     <!-- Popular -->
 
     <section id="popular" class="bg-green-900">
-      <div class="container flex flex-col items-center gap-3 text-center mb-15">
+      <div
+        class="popular_top container flex flex-col items-center gap-3 text-center mb-15">
         <h2 class="title">Your Choice Plant</h2>
         <p class="max-w-2xl font-sans text-xl">Follow instruction for more</p>
       </div>
@@ -426,19 +432,20 @@ import Gallery from "../components/Gallery.astro";
 
     <!-- Review -->
     <section id="review" class="relative mb-20 md:mb-28 overflow-hidden">
-      <div class="absolute -top-8 -left-12 opacity-50">
+      <div class="review_leaf absolute -top-8 -left-12 opacity-50">
         <img
           src="/src/assets/img/leaf-4.png"
           alt="leaf_image"
           class="w-50 md:w-52 xl:w-64"
         />
       </div>
-      <div class="flex flex-col items-center gap-3 text-center mb-10 lg:mb-20">
+      <div
+        class="review_top flex flex-col items-center gap-3 text-center mb-10 lg:mb-20">
         <h2 class="title">Customer Review</h2>
         <p class="max-w-2xl font-sans text-xl">Follow instruction for more</p>
       </div>
 
-      <div class="container">
+      <div class="review_swiper container">
         <div class="swiper py-12">
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
@@ -589,7 +596,7 @@ import Gallery from "../components/Gallery.astro";
     </div>
 
     <!-- Social icon -->
-    <div class="container mt-16 mb-10">
+    <div class="footer_icon container mt-16 mb-10">
       <div class="border-b border-green-500 relative">
         <div
           class="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 mx-auto">
@@ -613,7 +620,7 @@ import Gallery from "../components/Gallery.astro";
 
     <!-- Content -->
     <div
-      class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl-grid-col-4 gap-8 text-center md:text-start">
+      class="footer_content container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl-grid-col-4 gap-8 text-center md:text-start">
       <!-- item 1 -->
       <div>
         <div class="text-7xl text-green-700 text-center inline-block">
@@ -661,14 +668,15 @@ import Gallery from "../components/Gallery.astro";
     </div>
 
     <!-- Copyright -->
-    <div class="container">
+    <div class="copy_right container">
       <p class="text-center mt-10 opacity-50">
         Copyright &copy; 2025 LightCode. All rights reserved.
       </p>
     </div>
 
     <!-- Floral image -->
-    <div class="absolute bottom-0 left-0 opacity-20 pointer-events-none">
+    <div
+      class="footer_floral absolute bottom-0 left-0 opacity-20 pointer-events-none">
       <img
         src="/src/assets/img/floral-1.png"
         alt="floral_image"
@@ -684,6 +692,40 @@ import Gallery from "../components/Gallery.astro";
       <i class="ri-arrow-up-line"></i>
     </a>
   </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sr = ScrollReveal({
+        origin: "top",
+        distance: "60px",
+        duration: 2500,
+        delay: 300,
+        reset: true,
+      });
+
+      sr.reveal(
+        ".home_data, .about_top, .popular_top, .review_top, .review_swiper, .footer_icon, .footer_content, .copy_right"
+      );
+      sr.reveal(".home_image", { delay: 500, scale: 0.5 });
+
+      sr.reveal(".service_card, .popular_card", { interval: 100 });
+
+      sr.reveal(".about_leaf", { delay: 1000, origin: "right" });
+      sr.reveal(".about_item_1-content, .about_item_2-img", {
+        origin: "right",
+      });
+      sr.reveal(".about_item_2-content, .about_item_1-img", {
+        origin: "left",
+      });
+      sr.reveal(".review_leaf, .footer_floral", {
+        delay: 1000,
+        origin: "left",
+      });
+    });
+  </script>
+
+  <script src="/src/assets/js/scrollreveal.min.js"></script>
 
   <script src="/src/assets/js/main.js"></script>
 </Layout>
