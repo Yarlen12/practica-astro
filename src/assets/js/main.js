@@ -101,3 +101,27 @@ const activeLink = () => {
 window.addEventListener("scroll", activeLink);
 
 // SCROLL REVEAL ANIMATION
+import ScrollReveal from "../js/scrollreveal.min.js";
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 300,
+  reset: true,
+});
+
+console.log(document.querySelector(".home_data")); // Debe imprimir el elemento o 'null'
+console.log(document.querySelector(".home_image"));
+
+sr.reveal(".home_data, .about_top");
+sr.reveal(".home_image", { delay: 500, scale: 0.5 });
+
+sr.reveal(".service_card", { interval: 100 });
+
+sr.reveal(".about_leaf", { delay: 1000, origin: "right" });
+sr.reveal(".about_item-1-content, .about_item-2-img", {
+  origin: "right",
+});
+sr.reveal(".about_item-2-content, .about_item-1-img", {
+  origin: "left",
+});
