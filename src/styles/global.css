@@ -68,3 +68,9 @@ h3 {
 .swiper-pagination-bullet {
   @apply bg-green-500 w-3 h-3;
 }
+.home_data,
+.home_image,
+.about_leaf,
+.service_card {
+  visibility: visible !important;
+}
